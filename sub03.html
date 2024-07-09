@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>제주 영농 지원 기상정보</title>
+    <link href="source/css/boxicons.css" rel="stylesheet" />
+    <link href="source/css/swiper-bundle.css" rel="stylesheet" />
+    <link href="source/css/style.css" rel="stylesheet" />
+
+    <!-- javaScript -->
+    <script src="source/js/jquery-3.5.1.min.js"></script>
+    <script src="source/js/swiper-bundle.js"></script>
+    <script src="source/js/common.js"></script>
+  </head>
+
+  <body class="main">
+    <!-- S:skip_navi -->
+    <div class="skip_navi">
+      <a class="sr-only sr-only-focusable" href="#header">메뉴 바로가기</a>
+      <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a>
+      <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a>
+    </div>
+    <!-- E:skip_navi -->
+    <!-- S:header -->
+    <header id="header">
+      <div class="container">
+        <h1><a href="/">제주 영농 지원 기상정보</a></h1>
+
+        <div class="site-links">
+          <a targe="_blank" href="">제주지방기상청</a>
+          <a targe="_blank" href="">제주특별자치도 농업기술원</a>
+        </div>
+
+        <button class="main-menu">
+          <i class="bx bx-menu"></i>
+          메뉴호출버튼
+        </button>
+      </div>
+    </header>
+    <!-- E:header -->
+
+    <!-- S:main_menu -->
+    <nav id="main-menu" class="menu">
+      <h2>제주 영농 지원 기상정보</h2>
+
+      <div class="menus">
+        <ul>
+          <li>
+            <div class="menu-title ">
+              <h3><a href="">농업기상</a></h3>
+              <span class="sub-down"><i class="bx bx-chevron-right"></i></span>
+            </div>
+
+            <ul class="menus-sub">
+              <li>
+                <h4><a href="">실시간</a></h4>
+                <ul>
+                  <li><a href="">현재기상</a></li>
+                  <li><a href="">현재기상지도</a></li>
+                  <li><a href="">기상변동 그래프</a></li>
+                </ul>
+                <h4><a href="">일별기상</a></h4>
+                <ul>
+                  <li><a href="">일일관측자료</a></li>
+                  <li><a href="">일기상지도</a></li>
+                  <li><a href="">기상변동그래프</a></li>
+                  <li><a href="">일간관측자료</a></li>
+                  <li><a href="">월간관측자료</a></li>
+                </ul>
+                <h4><a href="">서리 및 가뭄</a></h4>
+                <ul>
+                  <li><a href="">데이터조회</a></li>
+                  <li><a href="">현재 가뭄지도</a></li>
+                  <li><a href="">그래프조회</a></li>
+                </ul>
+                <h4><a href="">서리 저온</a></h4>
+                <ul>
+                  <li><a href="">서리예보</a></li>
+                  <li><a href="">평균보기</a></li>
+                  <li><a href="">전체보기</a></li>
+                </ul>
+                <h4><a href="">영농정보</a></h4>
+                <ul>
+                  <li><a href="">주간동향</a></li>
+                  <li><a href="">방제정보</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="menu-title">
+              <h3><a href="">월동채소</a></h3>
+              <span class="sub-down"><i class="bx bx-chevron-right"></i></span>
+            </div>
+            <ul class="menus-sub ">
+              <li>
+                <h4><a href="">무</a></h4>
+                <h4><a href="">마늘</a></h4>
+                <h4><a href="">당근</a></h4>
+                <h4><a href="">양파</a></h4>
+                <h4><a href="">양배추</a></h4>
+                <h4><a href="">브로콜리</a></h4>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="menu-title">
+              <h3><a href="">병해충발생예측</a></h3>
+              <span class="sub-down"><i class="bx bx-chevron-right"></i></span>
+            </div>
+            <ul class="menus-sub ">
+              <li>
+                <h4><a href="">병해충발생예측</a></h4>
+                <ul>
+                  <li><a href="">감귤궤양병</a></li>
+                  <li><a href="">감귤더뎅이병</a></li>
+                  <li><a href="">감귤검은점무늬병</a></li>
+                  <li><a href="">깍지벌레</a></li>
+                  <li><a href="">감자역병</a></li>
+                  <li><a href="">마늘고자리파리</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="menu-title">
+              <h3><a href="">감귤</a></h3>
+              <span class="sub-down"><i class="bx bx-chevron-right"></i></span>
+            </div>
+            <ul class="menus-sub ">
+              <li>
+                <h4><a href="">데뎅이병</a></h4>
+                <h4><a href="">검은점무늬병</a></h4>
+                <h4><a href="">화살깍지벌레</a></h4>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="menu-title">
+              <h3><a href="">날씨정보</a></h3>
+              <span class="sub-down"><i class="bx bx-chevron-right"></i></span>
+            </div>
+            <ul class="menus-sub ">
+              <li>
+                <h4><a href="">우리동네정보</a></h4>
+                <h4><a href="">과거기상자료</a></h4>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="menu-title">
+              <h3><a href="">커뮤니티</a></h3>
+              <span class="sub-down"><i class="bx bx-chevron-right"></i></span>
+            </div>
+            <ul class="menus-sub">
+              <li>
+                <h4><a href="">커뮤니티</a></h4>
+                <ul>
+                  <li><a href="">공지사항</a></li>
+                  <li><a href="">FAQ</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="menu-title">
+              <h3><a href="">문자서비스신청</a></h3>
+              <span class="sub-down"><i class="bx bx-chevron-right"></i></span>
+            </div>
+            <ul class="menus-sub">
+              <li>
+                <h4><a href="">신청하기</a></h4>
+                <h4><a href="">수정하기</a></h4>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <button class="close">
+        <i class="bx bx-x"></i>
+        메뉴닫기
+      </button>
+    </nav>
+    <!-- E:main_menu -->
+
+    <!-- S:subContent -->
+    <div id="content" class="sub">
+      <section class="sub-contents">
+        <div class="container">
+          <h3 class="stitle">현재기상</small></h3>
+          <p class="page-url">
+            <a href=""><i class="bx bxs-share-alt"></i> https://weather.agri.kr/jeju</a>
+          </p>
+
+          <!--S:content-->
+          <div class="sub-weather">
+            <div class="weather-radio">
+              <input id="radio01" type="radio" name="weather" checked ><label for="radio01">전체보기(현재)</label>
+              <input id="radio02" type="radio" name="weather"><label for="radio02">지점별보기</label>
+            </div>
+            <div class="sub-weather-tab01 on">
+              <div class="weather-date">
+                <h4>기간검색</h4>
+                <span>
+                  <input>
+                  <span>-</span>
+                  <input>
+                </span>
+                <button>검색</button>
+                <a href="">엑셀로 관측자료 보기</a>
+              </div>
+              <div class="table-outline">
+                <table style="border-top: none;">
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>지역</th>
+                            <th>관측지점</th>
+                            <th>해발(m)	</th>
+                            <th>관측시각	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td rowspan="9">제주북부</td>
+                            <td><a href="#">제주센터</a></td>
+                            <td>102</td>
+                            <td>09:40</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><a href="#">원종장</a></td>
+                            <td>102</td>
+                            <td>09:40</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><a href="#">노형동</a></td>
+                            <td>102</td>
+                            <td>09:40</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><a href="#">상귀리</a></td>
+                            <td>102</td>
+                            <td>09:40</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><a href="#">신엄리</a></td>
+                            <td>102</td>
+                            <td>09:40</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><a href="#">신촌리</a></td>
+                            <td>102</td>
+                            <td>09:40</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td><a href="#">오라2동</a></td>
+                            <td>102</td>
+                            <td>09:40</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td><a href="#">와산리</a></td>
+                            <td>102</td>
+                            <td>09:40</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td><a href="#">용강동</a></td>
+                            <td>102</td>
+                            <td>09:40</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td rowspan="9">제주남부</td>
+                            <td><a href="#">서귀센터</a></td>
+                            <td>102</td>
+                            <td>09:40</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td><a href="#">강정동</a></td>
+                            <td>102</td>
+                            <td>09:40</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td><a href="#">동홍동</a></td>
+                            <td>102</td>
+                            <td>09:40</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td><a href="#">보목동</a></td>
+                            <td>102</td>
+                            <td>09:40</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td><a href="#">상효동</a></td>
+                            <td>102</td>
+                            <td>09:40</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td><a href="#">상예동</a></td>
+                            <td>102</td>
+                            <td>09:40</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td><a href="#">수망리</a></td>
+                            <td>102</td>
+                            <td>09:40</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td><a href="#">위미리(서)</a></td>
+                            <td>102</td>
+                            <td>09:40</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td><a href="#">위미리(동)</a></td>
+                            <td>102</td>
+                            <td>09:40</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+            <div class="sub-weather-tab02">
+              
+              <div class="select">
+                <h4>관측지점선택 :</h4>
+                <select>
+                    <option>제주센터</option>
+                    <option>제주센터</option>
+                    <option>제주센터</option>
+                </select>
+              </div>
+
+              
+              <div class="weather-date">
+                <h4>기간검색</h4>
+                <span>
+                  <input>
+                  <span>-</span>
+                  <input>
+                </span>
+                <button>검색</button>
+                <a href="">엑셀로 관측자료 보기</a>
+              </div>
+              <div class="table-outline">
+                <table style="border-top: none;">
+                    <thead>
+                        <tr>
+                            <th>관측시각</th>
+                            <th>현재기온(℃)</th>
+                            <th>현재기온(℃)</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>202206301300</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                        </tr>
+                        <tr>
+                            <td>202206301300</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                        </tr>
+                        <tr>
+                            <td>202206301300</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+            
+          <p style="display: block;" class="table-guide">표는 좌우로 스크롤 가능합니다.</p>
+          </div>
+
+
+
+
+          <!--E:content-->
+        </div>
+      </section>
+    </div>
+    <!-- E:subContent -->
+
+
+    <article class="modal on">
+
+      <div class="modal-content ">
+        <h2>
+          제주센터
+        
+          <button class="close"><i class='bx bx-x'></i>창닫기</button>
+        </h2>
+        <dl>
+          <dt>해발(m)</dt>
+          <dd>102</dd>
+          <dt>관측시각</dt>
+          <dd>09:40</dd>
+          <dt>현재기온(℃)</dt>
+          <dd>30.1℃</dd>
+          <dt>현재기온(℃)</dt>
+          <dd>30.1℃</dd>
+          <dt>현재기온(℃)</dt>
+          <dd>30.1℃</dd>
+          <dt>현재기온(℃)</dt>
+          <dd>30.1℃</dd>
+          <dt>현재기온(℃)</dt>
+          <dd>30.1℃</dd>
+        </dl>
+      </div>
+    </article>
+
+
+
+    <!-- S:footer -->
+    <footer id="footer">
+      <div class="container">
+        <address>
+          <p>주소: (우)63278 제주특별자치도 제주시 만덕로 6길 32 제주지방기상청</p>
+          <p>대표전화: 064) 726-0367 (평일 09:00~18:00, 야간휴일은 당직실 연결)</p>
+        </address>
+
+        <p class="copyright">COPYRIGHT© 2021 KMA. ALL RIGHT RESERVED. E-mail: webmasterkma@korea.kr</p>
+
+        <div class="agency">
+          <button class="agency-open">유관기관 <i class="bx bxs-chevron-right"></i></button>
+          <div class="agency-link">
+            <a href="http://www.asdf.go.kr" target="blank" title="새창">사이트1</a>
+            <a href="http://asdf.net" target="blank" title="새창">사이트2</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- E:footer -->
+  </body>
+</html>
