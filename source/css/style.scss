@@ -2401,6 +2401,7 @@ body {
             }
 
             div.weather-date{
+              position:relative;
               background: #E0E0E0;
               width: 100%;
               height: auto;;
@@ -2442,6 +2443,24 @@ body {
                   
                 }
               }
+
+              p {
+                text-align:center;
+                padding:0 20px;
+                word-break:keep-all;
+                color:#0063ae;
+
+                @media (min-width: $screen-size-pc) {
+                  position:absolute;
+                  right:30px;
+                  top:50%;
+                  padding:0;
+                  text-align:left;
+                  transform:translateY(-50%);
+                  margin:0;
+                }
+              }
+
               button{
                 margin-top: 15px;
                 width: 120px;

@@ -4059,6 +4059,7 @@ body div#content.sub section.sub-contents div.container div.sub-weather div.sele
   color: #333;
 }
 body div#content.sub section.sub-contents div.container div.sub-weather div.weather-date {
+  position: relative;
   background: #E0E0E0;
   width: 100%;
   height: auto;
@@ -4105,6 +4106,23 @@ body div#content.sub section.sub-contents div.container div.sub-weather div.weat
 }
 body div#content.sub section.sub-contents div.container div.sub-weather div.weather-date > span > span {
   margin: 0 5px;
+}
+body div#content.sub section.sub-contents div.container div.sub-weather div.weather-date p {
+  text-align: center;
+  padding: 0 20px;
+  word-break: keep-all;
+  color: #0063ae;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-weather div.weather-date p {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    padding: 0;
+    text-align: left;
+    transform: translateY(-50%);
+    margin: 0;
+  }
 }
 body div#content.sub section.sub-contents div.container div.sub-weather div.weather-date button {
   margin-top: 15px;
